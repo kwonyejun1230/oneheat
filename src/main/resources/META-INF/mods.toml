@@ -1,0 +1,12 @@
+modLoader="javafml"
+loaderVersion="[2,)"
+license="MIT"
+
+[[mods]]
+modId="onehitmod"
+version="1.0.0"
+displayName="One Hit Mod"
+authors="kyjn"
+description='''
+Adds a flashy one-hit kill sword with effects.
+'''

@@ -1,0 +1,30 @@
+plugins {
+    id 'net.neoforged.gradle.userdev' version '[7.0.95,7.1)'
+}
+
+group = 'me.kyjn'
+version = '1.0.0'
+archivesBaseName = 'onehitmod'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'official', version: '1.21.8'
+}
+
+dependencies {
+    implementation 'net.neoforged:neoforge:21.8.13-beta'
+}
+
+jar {
+    manifest {
+        attributes([
+            'Specification-Title'     : 'OneHitMod',
+            'Specification-Vendor'    : 'kyjn',
+            'Specification-Version'   : '1',
+            'Implementation-Title'    : 'OneHitMod',
+            'Implementation-Version'  : version,
+            'Implementation-Vendor'   : 'kyjn'
+        ])
+    }
+}
